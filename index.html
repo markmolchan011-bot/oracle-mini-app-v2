@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>VIBE ORACLE</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="scene">
+      <div id="ball"></div>
+    </div>
+
+    <div class="card">
+      <div id="character"></div>
+      <div id="name">Нажми на шар</div>
+      <div id="phrase">Предсказание появится здесь</div>
+      <div id="rarity"></div>
+    </div>
+
+  </div>
+
+  <audio id="clickSound" src="click.mp3"></audio>
+  <audio id="rareSound" src="rare.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
