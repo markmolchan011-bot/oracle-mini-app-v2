@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1b1b1f, #0a0a0d);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  color: white;
+}
+
+#app {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scene {
+  margin-top: 40px;
+}
+
+#ball {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, #ffffff33, #000000),
+    linear-gradient(135deg, #444, #000);
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.8),
+    inset 0 0 40px rgba(255,255,255,.15);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+#ball:active {
+  transform: scale(0.95);
+}
+
+.shake {
+  animation: shake .6s ease;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(6deg); }
+  80% { transform: rotate(-6deg); }
+  100% { transform: rotate(0); }
+}
+
+.card {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 360px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+}
+
+#character {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 12px;
+  border-radius: 30px;
+  background-image: url("funko.png");
+  background-size: 500% 100%;
+  background-position: 0% 0%;
+}
+
+#name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#phrase {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: .9;
+}
+
+#rarity {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: gold;
+}
+
+.flash {
+  animation: flash .3s ease;
+}
+
+@keyframes flash {
+  0% { background-color: rgba(255,255,255,.15); }
+  100% { background-color: transparent; }
+}
+
+.rare {
+  color: gold;
+  font-weight: 700;
+}
