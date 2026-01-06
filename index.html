@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIBE ORACLE</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ОСНОВНОЙ ШАР -->
+  <div class="app">
+    <div id="character"></div>
+    <div id="ball"></div>
+    <div id="phrase">Нажми на шар</div>
+    <div id="rarity"></div>
+  </div>
+
+  <div id="noise"></div>
+
+  <!-- ПЕРСОНАЖИ -->
+  <div class="characters">
+
+    <div class="character" onclick="pick('ganvest')">
+      <img src="images/ganvest.jpeg" alt="GANVEST">
+      <p>GANVEST</p>
+    </div>
+
+    <div class="character" onclick="pick('entus')">
+      <img src="images/entus.png" alt="ENTUS">
+      <p>ENTUS</p>
+    </div>
+
+  </div>
+
+  <p id="result">Нажми на персонажа</p>
+
+  <!-- ЗВУКИ -->
+  <audio id="tap" src="tap.mp3" preload="auto"></audio>
+  <audio id="rare" src="rare.mp3" preload="auto"></audio>
+  <audio id="ultra" src="ultra.mp3" preload="auto"></audio>
+
+  <!-- JS ВСЕГДА ПОСЛЕ ВСЕГО -->
+  <script src="app.js"></script>
+
+</body>
+</html>
